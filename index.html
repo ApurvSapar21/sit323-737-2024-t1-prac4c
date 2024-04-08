@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <form method="POST" action="/add">
+        <input type="number" name="num1" placeholder="First number">
+        <input type="number" name="num2" placeholder="Second number">
+        <input type="submit" value="ADD">
+    </form>
+    <br>
+    <form method="POST" action="/subtract">
+        <input type="number" name="num1" placeholder="First number">
+        <input type="number" name="num2" placeholder="Second number">
+        <input type="submit" value="SUBTRACT">
+    </form>
+    <br>
+    <form method="POST" action="/multiply">
+        <input type="number" name="num1" placeholder="First number">
+        <input type="number" name="num2" placeholder="Second number">
+        <input type="submit" value="MULTIPLY">
+    </form>
+    <br>
+    <form method="POST" action="/division">
+        <input type="number" name="num1" placeholder="First number">
+        <input type="number" name="num2" placeholder="Second number">
+        <input type="submit" value="DIVIDE">
+    </form>
+    <br>
+    <form method="POST" action="/api/exponentiate">
+        <input type="number" name="num1" placeholder="Base" required>
+        <input type="number" name="num2" placeholder="Exponent" required>
+        <input type="submit" value="EXPONENT">
+    </form>
+    <br>
+    <form method="POST" action="/api/squareroot">
+        <input type="number" name="num" placeholder="Number" required>
+        <input type="submit" value="SQUARE ROOT">
+    </form>
+    <br>
+    <form method="POST" action="/api/modulo">
+        <input type="number" name="num1" placeholder="Dividend" required>
+        <input type="number" name="num2" placeholder="Divisor (non-zero)" required>
+        <input type="submit" value="MODULO">
+    </form>
+
+</body>
+
+</html>
